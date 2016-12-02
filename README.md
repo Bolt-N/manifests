@@ -1,5 +1,5 @@
 ##Initialize the source##
-repo init -u https://github.com/SAOSP-N/platform_manifest.git -b N1
+repo init -u https://github.com/Bolt-N/platform_manifest.git -b N
 
 ##Sync the source##
 repo sync -jx -f (x being however many cpu jobs)
@@ -8,11 +8,9 @@ repo sync -jx -f (x being however many cpu jobs)
 . build/envsetup.sh
 
 ##Get the right device to build##
-lunch simpleaosp_hammerhead-user
+lunch bolt_shamu-user
 
 ##Build it##
-make otapackage -jx (x being however many cpu jobs)
+make bolt -jx (x being however many cpu jobs)
 
-##Credits##
-Google for AOSP, Rascarlo and Rastakat for a lot for commits, AOSPA, CM, Other that we may missed, Etc.
 
